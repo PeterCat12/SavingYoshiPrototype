@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Yoshi_Falls_Prototype", "Yoshi_Falls_Prototype\Yoshi_Falls_Prototype.vcxproj", "{219E33E8-1253-4886-BA22-E134002C87F1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Audio", "Audio\Audio.vcxproj", "{8435D4B2-0F89-4335-8EEC-052D69D0D702}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Libs", "_Libs", "{10281C1B-A725-4855-83EB-BECC7F050E26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{219E33E8-1253-4886-BA22-E134002C87F1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{219E33E8-1253-4886-BA22-E134002C87F1}.Debug|Win32.Build.0 = Debug|Win32
+		{219E33E8-1253-4886-BA22-E134002C87F1}.Release|Win32.ActiveCfg = Release|Win32
+		{219E33E8-1253-4886-BA22-E134002C87F1}.Release|Win32.Build.0 = Release|Win32
+		{8435D4B2-0F89-4335-8EEC-052D69D0D702}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8435D4B2-0F89-4335-8EEC-052D69D0D702}.Debug|Win32.Build.0 = Debug|Win32
+		{8435D4B2-0F89-4335-8EEC-052D69D0D702}.Release|Win32.ActiveCfg = Release|Win32
+		{8435D4B2-0F89-4335-8EEC-052D69D0D702}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8435D4B2-0F89-4335-8EEC-052D69D0D702} = {10281C1B-A725-4855-83EB-BECC7F050E26}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GameEngine">
+      <UniqueIdentifier>{de7f87c7-438d-47ab-b7c2-96b21ae915cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Graphics">
+      <UniqueIdentifier>{e6c0afc7-d7f3-4b48-b5d7-18a6efd3c2de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{c15a411d-7f19-4700-9389-7217f7d5ff28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Res">
+      <UniqueIdentifier>{221df084-eb8e-4b00-a1d1-71942d104e7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yoshi_Falls">
+      <UniqueIdentifier>{3ec93c97-7bef-4792-9d6f-863388cf9b35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yoshi_Falls\Sprite">
+      <UniqueIdentifier>{9beabdbd-bc42-4416-8050-9bd25c42cacd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yoshi_Falls\Sounds">
+      <UniqueIdentifier>{477660e1-ff0d-442a-89bd-ad1dd8605636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yoshi_Falls\DecisionTree">
+      <UniqueIdentifier>{4e389a62-deba-464a-a3a7-61ccb5cd2545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{3cbd98dc-a36c-4eb5-b8dd-20b827e3f10c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\_Audio">
+      <UniqueIdentifier>{fe31bcca-a31c-4c42-b613-cda2abaf17d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\_Audio\include">
+      <UniqueIdentifier>{7bc5a141-3e52-44cd-a07d-ff2cfe564d13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yoshi_Falls\GameObjects">
+      <UniqueIdentifier>{31a45a12-4056-475b-897f-75d58ed0b8aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yoshi_Falls\GameObjects\Screens">
+      <UniqueIdentifier>{18064cfc-b7fc-4f9f-899f-02faabfdce02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yoshi_Falls\GameObjects\Managers">
+      <UniqueIdentifier>{c84620f4-be32-43a3-b446-5c0ceb88dcad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yoshi_Falls\GameObjects\CountDown">
+      <UniqueIdentifier>{4ab6d3f7-22b2-4177-9ff6-047f2b57c10e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yoshi_Falls\Game">
+      <UniqueIdentifier>{c7137f66-0340-495e-9c8f-b8ddad7df317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Yoshi_Falls\Macros">
+      <UniqueIdentifier>{7ff62917-d7c9-4d50-9759-5baef4077393}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameEngine.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Bitmap.h">
+      <Filter>GameEngine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Yoshi_Falls\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Background.h">
+      <Filter>Yoshi_Falls\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ComScreen.h">
+      <Filter>Yoshi_Falls\GameObjects\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="ComScreenManager.h">
+      <Filter>Yoshi_Falls\GameObjects\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapManager.h">
+      <Filter>GameEngine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="BitmapPair.h">
+      <Filter>Yoshi_Falls\GameObjects\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Yoshi_Falls\DecisionTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\include\irrKlang.h">
+      <Filter>_Libs\_Audio\include</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioMan.h">
+      <Filter>Yoshi_Falls\Sounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Yoshi_Falls\GameObjects\CountDown</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayText.h">
+      <Filter>Yoshi_Falls\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="YoshiFalls.h">
+      <Filter>Yoshi_Falls\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Trace.h">
+      <Filter>Yoshi_Falls\Macros</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameEngine.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Bitmap.cpp">
+      <Filter>GameEngine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Yoshi_Falls\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>Yoshi_Falls\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="ComScreen.cpp">
+      <Filter>Yoshi_Falls\GameObjects\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="ComScreenManager.cpp">
+      <Filter>Yoshi_Falls\GameObjects\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapManager.cpp">
+      <Filter>GameEngine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="BitmapPair.cpp">
+      <Filter>Yoshi_Falls\GameObjects\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Yoshi_Falls\DecisionTree</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioMan.cpp">
+      <Filter>Yoshi_Falls\Sounds</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayText.cpp">
+      <Filter>Yoshi_Falls\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="YoshiFalls.cpp">
+      <Filter>Yoshi_Falls\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Trace.cpp">
+      <Filter>Yoshi_Falls\Macros</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Yoshi_Falls_Prototype.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\MainControlScreen00.bmp">
+      <Filter>Resources\Res</Filter>
+    </Image>
+    <Image Include="Resources\PilotTest00.bmp">
+      <Filter>Resources\Res</Filter>
+    </Image>
+    <Image Include="Resources\Test.bmp">
+      <Filter>Resources\Res</Filter>
+    </Image>
+    <Image Include="Resources\NegativeTestSheet.bmp">
+      <Filter>Resources\Res</Filter>
+    </Image>
+    <Image Include="Resources\PositiveTestSheet.bmp">
+      <Filter>Resources\Res</Filter>
+    </Image>
+    <Image Include="Resources\NewImages\NegativeTest\BIG_NegativeTest.bmp">
+      <Filter>Resources\Res</Filter>
+    </Image>
+    <Image Include="Resources\Big_PilotTest_Sheet.bmp">
+      <Filter>Resources\Res</Filter>
+    </Image>
+    <Image Include="Resources\NewImages\PositiveTest\Big_PositiveTest_Sheet.bmp">
+      <Filter>Resources\Res</Filter>
+    </Image>
+    <Image Include="Resources\NewImages\NegativeTest\SMALL_NegativeTest_Sheet.bmp">
+      <Filter>Resources\Res</Filter>
+    </Image>
+    <Image Include="Resources\SMALL_PilotTest_Sheet.bmp">
+      <Filter>Resources\Res</Filter>
+    </Image>
+    <Image Include="Resources\NewImages\PositiveTest\SMALL_PositiveTest_Sheet.bmp">
+      <Filter>Resources\Res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\Sounds\WAVs\ScreenSwitch.wav">
+      <Filter>Resources\Res</Filter>
+    </Media>
+    <Media Include="Resources\Sounds\WAVs\ScreenSwitch2.wav">
+      <Filter>Resources\Res</Filter>
+    </Media>
+    <Media Include="Resources\Sounds\WAVs\ScreenSwitch3.wav">
+      <Filter>Resources\Res</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Audio\ikpMP3.dll">
+      <Filter>_Libs\_Audio</Filter>
+    </None>
+    <None Include="..\Audio\irrKlang.dll">
+      <Filter>_Libs\_Audio</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Audio\irrKlang.lib">
+      <Filter>_Libs\_Audio</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

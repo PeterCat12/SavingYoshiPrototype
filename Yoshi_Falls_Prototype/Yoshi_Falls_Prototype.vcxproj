@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{219E33E8-1253-4886-BA22-E134002C87F1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Yoshi_Falls_Prototype</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Audio\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy .\..\Audio\lib\*.* .\..\Debug</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>msimg32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Audio\include\irrKlang.h" />
+    <ClInclude Include="AudioMan.h" />
+    <ClInclude Include="Background.h" />
+    <ClInclude Include="Bitmap.h" />
+    <ClInclude Include="BitmapManager.h" />
+    <ClInclude Include="BitmapPair.h" />
+    <ClInclude Include="ComScreen.h" />
+    <ClInclude Include="ComScreenManager.h" />
+    <ClInclude Include="DisplayText.h" />
+    <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Trace.h" />
+    <ClInclude Include="YoshiFalls.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioMan.cpp" />
+    <ClCompile Include="Background.cpp" />
+    <ClCompile Include="Bitmap.cpp" />
+    <ClCompile Include="BitmapManager.cpp" />
+    <ClCompile Include="BitmapPair.cpp" />
+    <ClCompile Include="ComScreen.cpp" />
+    <ClCompile Include="ComScreenManager.cpp" />
+    <ClCompile Include="DisplayText.cpp" />
+    <ClCompile Include="GameEngine.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Trace.cpp" />
+    <ClCompile Include="YoshiFalls.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Yoshi_Falls_Prototype.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Big_PilotTest_Sheet.bmp" />
+    <Image Include="Resources\MainControlScreen00.bmp" />
+    <Image Include="Resources\NegativeTestSheet.bmp" />
+    <Image Include="Resources\NewImages\NegativeTest\BIG_NegativeTest.bmp" />
+    <Image Include="Resources\NewImages\NegativeTest\SMALL_NegativeTest_Sheet.bmp" />
+    <Image Include="Resources\NewImages\PositiveTest\Big_PositiveTest_Sheet.bmp" />
+    <Image Include="Resources\NewImages\PositiveTest\SMALL_PositiveTest_Sheet.bmp" />
+    <Image Include="Resources\PilotTest00.bmp" />
+    <Image Include="Resources\PositiveTestSheet.bmp" />
+    <Image Include="Resources\SMALL_PilotTest_Sheet.bmp" />
+    <Image Include="Resources\Test.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\Sounds\WAVs\ScreenSwitch.wav" />
+    <Media Include="Resources\Sounds\WAVs\ScreenSwitch2.wav" />
+    <Media Include="Resources\Sounds\WAVs\ScreenSwitch3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Audio\ikpMP3.dll" />
+    <None Include="..\Audio\irrKlang.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Audio\irrKlang.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
